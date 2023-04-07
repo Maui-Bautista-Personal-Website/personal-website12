@@ -1,0 +1,238 @@
+body {
+  margin: 0px;
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(
+      to right,
+      rgba(105, 105, 83, 0.761),
+      rgba(72, 81, 162, 0.799)
+    ),
+    url(../assets/backgroud/amazon.jpeg);
+
+  background-size: cover;
+  justify-content: center;
+  color: #fff;
+}
+
+/*===================== great outdoors====================== */
+#head {
+  justify-content: center;
+  display: flex;
+  background-color: #740f0f;
+  font-size: 25px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+/* ===================logo============== */
+
+nav {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+.facebook,
+.instagram,
+.tiktok,
+.github,
+.linkedin {
+  width: 30px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ====================pictures===================== */
+.wrapper {
+  display: flex;
+  width: 70%;
+  justify-content: space-around;
+  margin-left: auto;
+  margin-right: auto;
+}
+.wrapper2 {
+  display: flex;
+  width: 70%;
+  justify-content: space-around;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card {
+  margin: 20px 10px;
+  width: 280px;
+  height: 360px;
+  padding: 2rem 1rem;
+  background: transparent;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  /* box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5); */
+  transition: 0.5s ease-in-out;
+  border-radius: 20%;
+}
+
+.card:hover {
+  transform: translateY(20px);
+}
+
+.card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(113, 124, 110, 0.224),
+    rgb(24, 25, 24)
+  );
+  z-index: 2;
+  transition: 0.5s all;
+  opacity: 0;
+}
+
+.card:hover:before {
+  opacity: 1;
+}
+
+.card img {
+  /* margin: 15px;  */
+  /* width: 100%;
+  height: 100%; */
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.card .info {
+  position: relative;
+  z-index: 3;
+  color: #fff;
+  opacity: 0;
+  transform: relativeY(30px);
+  transition: 0.5s all;
+}
+.card:hover .info {
+  opacity: 1;
+  transform: relativeY(0px);
+}
+
+.card .info h1 {
+  margin: 0%;
+}
+
+.card .info p {
+  letter-spacing: 1px;
+  font-size: 15px;
+  margin-top: 8px;
+  margin-bottom: 20px;
+}
+
+.card .info .btn {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  background: #f50404db;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+
+.card .info .btn:hover {
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* /* ====================Buttons========================= */
+
+.bton {
+  margin-top: 15px;
+  font-size: 14px;
+  padding: 10px 30px;
+  cursor: pointer;
+  font-weight: 400;
+  color: rgb(251, 6, 6);
+  border-radius: 30px;
+  transition: all 0.2s linear;
+  -webkit-transition: all o.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.btn-4polio {
+  background-color: rgb(230, 213, 213);
+  position: relative;
+  z-index: 1;
+  font-size: 17px;
+  text-transform: uppercase;
+  margin-left: 20px;
+}
+
+.btn-4polio:hover {
+  color: #f6eeef;
+  background: red;
+  border: 1px dotted #f63854;
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.1);
+}
+
+.btn-b2mp {
+  background-color: rgb(230, 213, 213);
+  position: relative;
+  z-index: 1;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+
+.btn-b2mp:hover {
+  color: #f6eeef;
+  background: red;
+  border: 1px dotted #f63854;
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.1);
+}
+
+.btn-about {
+  background-color: rgb(230, 213, 213);
+  position: relative;
+  z-index: 1;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+
+.btn-about:hover {
+  color: #f6eeef;
+  background: red;
+  border: 1px dotted #f63854;
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.1);
+}
+
+.button {
+  display: flex;
+  width: 70%;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.icon {
+  max-width: 100%;
+  min-width: 75%;
+}
