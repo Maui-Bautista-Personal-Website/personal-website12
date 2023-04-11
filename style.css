@@ -177,3 +177,17 @@ a {
   border: 1px dotted #f63854;
   box-shadow: 0 6px 22px rgba(0, 0, 0, 0.1);
 }
+.btn-contact {
+  background-color: rgb(230, 213, 213);
+  position: relative;
+  z-index: 1;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+
+.btn-contact:hover {
+  color: #f6eeef;
+  background: red;
+  border: 1px dotted #f63854;
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.1);
+}
