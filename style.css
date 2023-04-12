@@ -2,6 +2,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* background-attachment: fixed;
+  background-image: linear-gradient(
+      to right,
+      rgba(105, 105, 83, 0.761),
+      rgba(72, 81, 162, 0.799)
+    ),
+    url(assets/backgroud/amazon.jpeg);
+  z-index: 1; */
 }
 .container {
   display: grid;
@@ -105,9 +113,6 @@ nav ul li {
   -webkit-text-fill-color: transparent;
 }
 
-.content {
-}
-
 .maui {
   width: 130%;
   max-width: 500px;
@@ -155,6 +160,7 @@ a {
   -moz-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
   display: inline-block;
+  z-index: 1;
 }
 
 .btn-about {
