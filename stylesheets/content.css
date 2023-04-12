@@ -215,6 +215,7 @@ a {
   z-index: 1;
   font-size: 17px;
   text-transform: uppercase;
+  margin-left: 20px;
 }
 
 .btn-about:hover {
@@ -267,6 +268,9 @@ a {
   height: 300px;
   margin-left: auto;
   margin-right: auto;
+  background-color: rgba(0, 195, 255, 0.572);
+  border: solid;
+  padding: 10px;
 }
 
 .name {
@@ -283,4 +287,7 @@ a {
 
 .button {
   grid-area: button;
+}
+.submit {
+  text-align: center;
 }

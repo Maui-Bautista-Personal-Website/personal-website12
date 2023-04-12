@@ -3,10 +3,16 @@
   padding: 0;
   box-sizing: border-box;
 }
-/* ===================main page=================== */
-/*============Background=====================*/
-
-.social {
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.3fr 0.3fr 3.1fr 0.3fr;
+  gap: 20px 20px;
+  grid-template-areas:
+    "header header"
+    "buttons buttons"
+    "content picture"
+    "footer footer";
   position: relative;
   width: 100%;
   height: 100vh;
@@ -21,6 +27,32 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.header {
+  grid-area: header;
+}
+.buttons {
+  grid-area: buttons;
+  text-align: center;
+}
+.content {
+  grid-area: content;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0;
+  font-display: bold;
+  padding: 30px;
+}
+.picture {
+  grid-area: picture;
+  padding: 60px;
+}
+.footer {
+  grid-area: footer;
+}
+
 /* ====================social media logo=================== */
 nav {
   display: flex;
@@ -55,15 +87,15 @@ nav ul li {
 /*=================About Me Section============*/
 
 .head1 {
-  max-width: 60em;
-  padding-left: 5%;
-  text-align: left;
+  /* max-width: 60em; */
+  /* padding-left: 5%; */
+  /* text-align: left; */
 }
 .head1 h1 {
-  font-size: 60px;
-  font-weight: 600;
-  line-height: 60px;
-  margin-bottom: 50px;
+  font-size: 40px;
+  /* font-weight: 600; */
+  /* line-height: 60px; */
+  /* margin-bottom: 50px; */
   background: -webkit-linear-gradient(
     rgba(250, 248, 250, 0.976),
     rgba(133, 115, 122, 0.921)
@@ -74,18 +106,11 @@ nav ul li {
 }
 
 .content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 0;
-  font-display: bold;
-  margin-top: 300px;
 }
 
 .maui {
   width: 130%;
-  max-width: 450px;
+  max-width: 500px;
   position: relative;
   border-radius: 200px;
 }
@@ -112,7 +137,7 @@ a {
   position: relative;
   color: rgb(240, 15, 15);
   text-transform: uppercase;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
 }
 
 /*================Buttons================*/
@@ -138,6 +163,7 @@ a {
   z-index: 1;
   font-size: 17px;
   text-transform: uppercase;
+  margin-left: 20px;
 }
 
 .btn-resume {
@@ -147,6 +173,7 @@ a {
   border-radius: 30px;
   background-color: rgb(230, 213, 213);
   text-transform: uppercase;
+  margin-left: 20px;
 }
 
 .btn-resume:hover {
@@ -154,6 +181,7 @@ a {
   background: red;
   border: 1px dotted #f63854;
   box-shadow: 0 6px 22px rgba(0, 0, 0, 0.1);
+  margin-left: 20px;
 }
 
 .btn-about:hover {
@@ -169,6 +197,7 @@ a {
   z-index: 1;
   font-size: 17px;
   text-transform: uppercase;
+  margin-left: 20px;
 }
 
 .btn-4polio:hover {
@@ -183,6 +212,7 @@ a {
   z-index: 1;
   font-size: 17px;
   text-transform: uppercase;
+  margin-left: 20px;
 }
 
 .btn-contact:hover {
