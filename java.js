@@ -1,5 +1,6 @@
 const form = document.querySelector("#form");
 const submitButton = document.querySelector("#submit");
+console.log(form);
 const scriptURL =
   "https://script.google.com/macros/s/1XTaVdkdAnzhAHoLOA-x0K4svtJOB9RUnp2OgudFCNoEE4Lo8muDKOgSO/exec";
 
