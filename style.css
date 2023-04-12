@@ -2,14 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* background-attachment: fixed;
-  background-image: linear-gradient(
-      to right,
-      rgba(105, 105, 83, 0.761),
-      rgba(72, 81, 162, 0.799)
-    ),
-    url(assets/backgroud/amazon.jpeg);
-  z-index: 1; */
 }
 .container {
   display: grid;
@@ -17,8 +9,8 @@
   grid-template-rows: 0.3fr 0.3fr 3.1fr 0.3fr;
   gap: 20px 20px;
   grid-template-areas:
-    "header header"
     "buttons buttons"
+    "header header"
     "content picture"
     "footer footer";
   position: relative;
@@ -94,16 +86,8 @@ nav ul li {
 
 /*=================About Me Section============*/
 
-.head1 {
-  /* max-width: 60em; */
-  /* padding-left: 5%; */
-  /* text-align: left; */
-}
 .head1 h1 {
   font-size: 40px;
-  /* font-weight: 600; */
-  /* line-height: 60px; */
-  /* margin-bottom: 50px; */
   background: -webkit-linear-gradient(
     rgba(250, 248, 250, 0.976),
     rgba(133, 115, 122, 0.921)
@@ -116,6 +100,7 @@ nav ul li {
 .maui {
   width: 130%;
   max-width: 500px;
+  min-width: 250px;
   position: relative;
   border-radius: 200px;
 }
