@@ -260,29 +260,35 @@ a {
   grid-template-areas:
     "name email"
     "message-field message-field"
-    "button button";
+    "buttons buttons";
   width: 500px;
   height: 300px;
   margin-left: auto;
   margin-right: auto;
-  background-color: rgba(0, 195, 255, 0.572);
+  background-color: rgb(175, 168, 168);
   border: solid;
   padding: 10px;
 }
 
 .name {
   grid-area: name;
+  font-size: 15px;
 }
 
 .email {
+  font-size: 15px;
   grid-area: email;
 }
 
 .message-field {
+  font-size: 15px;
+
   grid-area: message-field;
 }
 
-.button {
+.buttons {
+  font-size: 20px;
+
   grid-area: button;
 }
 .submit {
