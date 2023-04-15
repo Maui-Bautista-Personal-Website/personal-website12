@@ -42,7 +42,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 0;
-  /* font-display: bold; */
+  font-display: bold;
   padding: 20px;
   text-align: center;
 }
@@ -165,7 +165,6 @@ a {
   .container {
     grid-template-columns: 1fr;
     grid-template-rows: 0.3fr 0.3fr 3fr 0.3fr 0.3fr;
-    gap: 20px 20px;
     grid-template-areas:
       "buttons "
       "header"
@@ -200,9 +199,8 @@ p {
 }
 
 .btn {
- 
   font-size: 5px;
-    padding: 5px 15px;
+    padding: 5px ;
     border-radius: 15px;
    }
 
@@ -211,11 +209,10 @@ p {
 .btn-4polio,
 .btn-contact {
   font-size: 10px;
+  height: 15px;
 }
 
 .facebook,.instagram,.tiktok,.github,.linkedin  {
   width: 20px;
 }
-
- 
 }
