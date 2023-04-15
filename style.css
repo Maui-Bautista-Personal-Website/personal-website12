@@ -15,7 +15,7 @@
     "footer footer";
   position: relative;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-attachment: fixed;
   background-image: linear-gradient(
       to right,
@@ -31,7 +31,7 @@
 .header {
   grid-area: header;
 }
-.buttons {
+.button1 {
   grid-area: buttons;
   text-align: center;
 }
@@ -219,13 +219,125 @@ a {
 }
 
 /*=========responsive===========  */
+/* 
+@media screen and (min-width: 500px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.3fr 0.3fr 3.1fr 0.3fr 0.3fr;
+    gap: 20px 20px;
+    grid-template-areas:
+      "buttons "
+      "header"
+      "content "
+      "picture"
+      "footer ";
+    background-size: 100%;
+    background-repeat: repeat;
+    background: none;
+    background-color: black;
+  } */
+@media screen and (max-width: 500px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.3fr 0.3fr 3.1fr 0.3fr 0.3fr;
+    gap: 20px 20px;
+    grid-template-areas:
+      "buttons "
+      "header"
+      "content "
+      "picture"
+      "footer ";
+    background-size: 100%;
+    background-repeat: repeat;
+    background: none;
+    background-color: black;
+    display: flex;
+    flex-flow: row wrap;
+    width: 100vw;
+  }
 
-@media screen and (max-width: 350px) {
-  .content,
-  .picture,
-  .header .buttons .head1 {
-    grid-column: span 2;
-    border-right: 0;
-    font-size: 20px;
+  .btn {
+    margin-top: 15px;
+    font-size: 14px;
+    padding: 10px 30px;
+    cursor: pointer;
+    font-weight: 400;
+    color: rgb(251, 6, 6);
+    border-radius: 30px;
+    transition: all 0.2s linear;
+    -webkit-transition: all o.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    display: inline-block;
+    z-index: 1;
+  }
+
+  .btn-about {
+    background-color: rgb(230, 213, 213);
+    position: relative;
+    z-index: 1;
+    font-size: 17px;
+    text-transform: uppercase;
+    margin-left: 20px;
+  }
+
+  .btn-resume {
+    color: rgb(251, 6, 6);
+    position: relative;
+    font-size: 17px;
+    border-radius: 30px;
+    background-color: rgb(230, 213, 213);
+    text-transform: uppercase;
+    margin-left: 20px;
+  }
+
+  .btn-resume:hover {
+    color: #f6eeef;
+    background: red;
+    border: 1px dotted #f63854;
+    box-shadow: 0 6px 22px rgba(0, 0, 0, 0.1);
+    margin-left: 20px;
+  }
+
+  .btn-about:hover {
+    color: #f6eeef;
+    background: red;
+    border: 1px dotted #f63854;
+    box-shadow: 0 6px 22px rgba(0, 0, 0, 0.1);
+  }
+
+  .btn-4polio {
+    background-color: rgb(230, 213, 213);
+    position: relative;
+    z-index: 1;
+    font-size: 17px;
+    text-transform: uppercase;
+    margin-left: 20px;
+  }
+
+  .btn-4polio:hover {
+    color: #f6eeef;
+    background: red;
+    border: 1px dotted #f63854;
+    box-shadow: 0 6px 22px rgba(0, 0, 0, 0.1);
+  }
+  .btn-contact {
+    background-color: rgb(230, 213, 213);
+    position: relative;
+    z-index: 1;
+    font-size: 17px;
+    text-transform: uppercase;
+    margin-left: 20px;
+  }
+
+  .btn-contact:hover {
+    color: #f6eeef;
+    background: red;
+    border: 1px dotted #f63854;
+    box-shadow: 0 6px 22px rgba(0, 0, 0, 0.1);
+  }
+  .button1 {
+    display: flex;
+    flex-flow: row wrap;
   }
 }
