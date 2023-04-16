@@ -167,20 +167,23 @@ a {
 /* ===========responsive============= */
 
 @media screen and (max-width: 900px) {
-  .container {
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.3fr 0.3fr 3fr 0.3fr 0.3fr;
-    grid-template-areas:
-      "buttons "
-      "header"
-      "content "
-      "picture"
-      "footer ";
-    display: flex;
-    flex-flow: row wrap;
-    width: 100vw;
-    padding: 15px;
-    justify-content: space-around;
+  .maui {
+    max-width: 350px;
+  }
+  .btn {
+    font-size: 10px;
+  }
+
+  .head1 h1 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  .footer p {
+    font-size: 10px;
   }
 }
 
@@ -227,10 +230,7 @@ a {
     border-radius: 15px;
   }
 
-  .btn-resume,
-  .btn-about,
-  .btn-4polio,
-  .btn-contact {
+  .btn {
     font-size: 10px;
     height: 20px;
   }
@@ -244,6 +244,6 @@ a {
   }
 
   .footer p {
-    font-size: 5px;
+    font-size: 10px;
   }
 }
