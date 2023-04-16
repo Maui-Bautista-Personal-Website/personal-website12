@@ -51,8 +51,11 @@
   text-align: center;
 }
 .footer {
-  margin-top: 0;
   grid-area: footer;
+  text-align: center;
+}
+.footer p {
+  font-size: 10px;
 }
 
 /* ====================social media logo=================== */
@@ -163,6 +166,24 @@ a {
 
 /* ===========responsive============= */
 
+@media screen and (max-width: 900px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.3fr 0.3fr 3fr 0.3fr 0.3fr;
+    grid-template-areas:
+      "buttons "
+      "header"
+      "content "
+      "picture"
+      "footer ";
+    display: flex;
+    flex-flow: row wrap;
+    width: 100vw;
+    padding: 15px;
+    justify-content: space-around;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .container {
     grid-template-columns: 1fr;
@@ -189,7 +210,7 @@ a {
   }
 
   .maui {
-    max-width: 250px;
+    width: 350px;
   }
 
   .head1 h1 {
@@ -223,24 +244,6 @@ a {
   }
 
   .footer p {
-    font-size: 10px;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .container {
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.3fr 0.3fr 3fr 0.3fr 0.3fr;
-    grid-template-areas:
-      "buttons "
-      "header"
-      "content "
-      "picture"
-      "footer ";
-    display: flex;
-    flex-flow: row wrap;
-    width: 100vw;
-    padding: 15px;
-    justify-content: space-around;
+    font-size: 5px;
   }
 }
