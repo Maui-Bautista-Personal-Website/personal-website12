@@ -1,7 +1,7 @@
 * {
   margin: 0;
-  padding: 0; */
-  box-sizing: border-box; 
+  padding: 0;
+  box-sizing: border-box;
 }
 .container {
   display: grid;
@@ -49,7 +49,6 @@
 .picture {
   grid-area: picture;
   text-align: center;
-
 }
 .footer {
   margin-top: 0;
@@ -70,7 +69,11 @@ nav ul li {
   padding: 10px 20px;
 }
 
-.facebook,.instagram,.tiktok,.github,.linkedin  {
+.facebook,
+.instagram,
+.tiktok,
+.github,
+.linkedin {
   width: 30px;
 }
 
@@ -88,7 +91,7 @@ nav ul li {
 }
 
 .maui {
-  max-width: 500px; 
+  max-width: 500px;
   position: relative;
   padding: 30px;
 }
@@ -115,7 +118,6 @@ a {
   text-align: left;
   position: relative;
   color: rgb(240, 15, 15);
-
 }
 
 /*================Buttons================*/
@@ -185,34 +187,37 @@ a {
     flex-flow: row wrap;
   }
 
-.maui {
-  max-width: 250px; 
-}
+  .maui {
+    max-width: 250px;
+  }
 
-.head1 h1 {
-  font-size: 20px;
-}
+  .head1 h1 {
+    font-size: 20px;
+  }
 
-p {
+  p {
+    font-size: 15px;
+  }
 
-  font-size: 15px;
-}
-
-.btn {
-  font-size: 5px;
-    padding: 5px ;
+  .btn {
+    font-size: 5px;
+    padding: 5px;
     border-radius: 15px;
-   }
+  }
 
-.btn-resume,
-.btn-about,
-.btn-4polio,
-.btn-contact {
-  font-size: 10px;
-  height: 15px;
-}
+  .btn-resume,
+  .btn-about,
+  .btn-4polio,
+  .btn-contact {
+    font-size: 10px;
+    height: 15px;
+  }
 
-.facebook,.instagram,.tiktok,.github,.linkedin  {
-  width: 20px;
-}
+  .facebook,
+  .instagram,
+  .tiktok,
+  .github,
+  .linkedin {
+    width: 20px;
+  }
 }
