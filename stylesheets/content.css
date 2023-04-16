@@ -50,6 +50,11 @@ nav ul li {
   width: 30px;
 }
 
+.icon {
+  max-width: 100%;
+  min-width: 75%;
+}
+
 a {
   text-decoration: none;
 }
@@ -175,7 +180,10 @@ a {
   margin-bottom: 30px;
 }
 
-.btn-4polio {
+.btn-4polio,
+.btn-b2mp,
+.btn-about,
+.btn-contact {
   background-color: rgb(230, 213, 213);
   position: relative;
   z-index: 1;
@@ -184,38 +192,10 @@ a {
   margin-left: 20px;
 }
 
-.btn-4polio:hover {
-  color: #f6eeef;
-  background: red;
-  border: 1px dotted #f63854;
-  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.1);
-}
-
-.btn-b2mp {
-  background-color: rgb(230, 213, 213);
-  position: relative;
-  z-index: 1;
-  font-size: 17px;
-  text-transform: uppercase;
-}
-
-.btn-b2mp:hover {
-  color: #f6eeef;
-  background: red;
-  border: 1px dotted #f63854;
-  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.1);
-}
-
-.btn-about {
-  background-color: rgb(230, 213, 213);
-  position: relative;
-  z-index: 1;
-  font-size: 17px;
-  text-transform: uppercase;
-  margin-left: 20px;
-}
-
-.btn-about:hover {
+.btn-4polio:hover,
+.btn-b2mp:hover,
+.btn-about:hover,
+.btn-contact:hover {
   color: #f6eeef;
   background: red;
   border: 1px dotted #f63854;
@@ -228,26 +208,6 @@ a {
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-}
-.btn-contact {
-  background-color: rgb(230, 213, 213);
-  position: relative;
-  z-index: 1;
-  font-size: 17px;
-  text-transform: uppercase;
-  margin-left: 20px;
-}
-
-.btn-contact:hover {
-  color: #f6eeef;
-  background: red;
-  border: 1px dotted #f63854;
-  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.1);
-}
-
-.icon {
-  max-width: 100%;
-  min-width: 75%;
 }
 
 /* =================contact============= */
