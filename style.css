@@ -175,15 +175,11 @@ a {
   }
 
   .head1 h1 {
-    font-size: 30px;
+    font-size: 25px;
   }
 
   p {
-    font-size: 20px;
-  }
-
-  .footer p {
-    font-size: 10px;
+    font-size: 15px;
   }
 }
 
@@ -197,9 +193,9 @@ a {
       "content "
       "picture"
       "footer ";
-    background-repeat: repeat;
+    /* background-repeat: repeat;
     background: none;
-    background-color: black;
+    background-color: black; */
     display: flex;
     flex-flow: row wrap;
     width: 100vw;
@@ -241,9 +237,5 @@ a {
   .github,
   .linkedin {
     width: 20px;
-  }
-
-  .footer p {
-    font-size: 10px;
   }
 }
