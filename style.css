@@ -193,9 +193,7 @@ a {
       "content "
       "picture"
       "footer ";
-    /* background-repeat: repeat;
-    background: none;
-    background-color: black; */
+
     display: flex;
     flex-flow: row wrap;
     width: 100vw;

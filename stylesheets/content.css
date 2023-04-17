@@ -47,7 +47,29 @@
 }
 
 .pic1 {
+  justify-self: center;
   grid-area: pic1;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 20px 20px;
+  grid-template-areas:
+    "name email"
+    "message message"
+    "submit submit";
+  grid-area: pic1;
+}
+
+.name {
+  grid-area: name;
+}
+.email {
+  grid-area: email;
+}
+.message {
+  grid-area: message;
+}
+.submit {
+  grid-area: submit;
 }
 
 .pic2 {
@@ -256,16 +278,8 @@ a {
 }
 
 /* =================contact============= */
-/* .container {
-  display: grid;
-  grid-template-columns: 0.9fr 1.1fr;
-  grid-template-rows: 0.6fr 1.9fr 0.5fr;
-  gap: 16px 16px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "name email"
-    "message-field message-field"
-    "buttons buttons";
+.contact {
+  justify-self: center;
   width: 500px;
   height: 300px;
   margin-left: auto;
@@ -273,9 +287,10 @@ a {
   background-color: rgb(175, 168, 168);
   border: solid;
   padding: 10px;
+  text-align: center;
 }
 
-.name {
+/* .name {
   grid-area: name;
   font-size: 15px;
 }
@@ -291,11 +306,6 @@ a {
   grid-area: message-field;
 }
 
-.buttons {
-  font-size: 20px;
-
-  grid-area: button;
-}
 .submit {
   text-align: center;
 } */

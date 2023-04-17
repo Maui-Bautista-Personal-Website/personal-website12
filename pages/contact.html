@@ -8,14 +8,15 @@
     <link rel="stylesheet" href="../stylesheets/content.css" />
   </head>
   <body>
-    <body>
-    <section id="head">
-      <div>
+    <div class="container">
+  <div class="Header">
+    <div>
         <h1>Contact</h1>
       </div>
-    </section>
-    <section>
-      <nav>
+  </div>
+
+  <div class="Smedia">
+    <nav>
         <ul>
           <li>
             <a href="https://www.facebook.com/mauibautista101"
@@ -44,37 +45,41 @@
           </li>
         </ul>
       </nav>
-    </section>
-<section class="button">
+  </div>
+  <div class="buttons">
+    <section class="button">
     <a href="../index.html" class="bton btn-b2mp">Home</a>
     <a href="../pages/portfolio.html" class="bton btn-about">Portfolio</a>
     <a href="../pages/about.html" class="bton btn-about">About</a>
     </section>
+  </div>
 
-    <!-- ================contacts section============== -->
-    <form id="form">
-    <div class="container">
-      <div class="name">
-        <label for="name">Name:</label>
+     <!-- ================contacts section============== -->
+    
+   <form id="form">
+  <div class="pic1">
+    <div class="contact">
+    <div class="name">
+      <label for="name">Name:</label>
         <input type="text" name="name" id="name" required />
-      </div>
-      <div class="email">
-        <div>
-          <label for="email">E-mail:</label>
-          <input type="email" name="email" id="email" required />
-        </div>
-      </div>
-      <div class="message-field">
-        <div>
-          <label for="feedback">Message</label>
-          <textarea id="feedback" name="feedback"></textarea>
-        </div>
-      </div>
-      <div class="submit">
-        <input type="submit" id="submit"></input>
-      </div>      
     </div>
-    </form>
-  </body>
-  <script src="../java.js"></script>
+    <div class="email">
+      <label for="email">E-mail:</label>
+          <input type="email" name="email" id="email" required />
+    </div>
+    <div class="message-field">
+      <label for="feedback">Message</label>
+          <textarea id="feedback" name="feedback"></textarea>
+    </div>
+    <div class="submit">
+       <input type="submit" id="submit"></input>
+        </div>
+    </div>
+  </div>
+  </form>
+ 
+  <div class="footer"><p>Copyright 2023 "Maui Bautista Personal Website"</p></div>
+</div>
+</body>
+<script src="../java.js"></script>
 </html>
