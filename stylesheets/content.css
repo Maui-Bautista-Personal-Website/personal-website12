@@ -288,3 +288,91 @@ a {
   padding: 10px;
   text-align: center;
 }
+
+#feedback {
+  height: 171px;
+  width: 340px;
+}
+#name,
+#email {
+  height: 30px;
+  width: 500;
+}
+
+/* ==========responsive============== */
+
+@media screen and (max-width: 900px) {
+  .maui {
+    max-width: 350px;
+  }
+  .bton {
+    font-size: 10px;
+  }
+  .card {
+    width: 250px;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+  .contact {
+    width: 450px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.3fr 0.3fr 3fr 0.3fr 0.3fr;
+    grid-template-areas:
+      "buttons "
+      "header"
+      "content "
+      "picture"
+      "footer ";
+
+    display: flex;
+    flex-flow: row wrap;
+    width: 100vw;
+    padding: 15px;
+    justify-content: space-around;
+  }
+
+  .button1 {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .maui {
+    width: 350px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .btn {
+    font-size: 5px;
+    padding: 5px;
+    border-radius: 15px;
+  }
+
+  .bton {
+    font-size: 10px;
+  }
+
+  .card {
+    width: 200px;
+  }
+
+  .facebook,
+  .instagram,
+  .tiktok,
+  .github,
+  .linkedin {
+    width: 20px;
+  }
+  .contact {
+    width: 450px;
+  }
+}
